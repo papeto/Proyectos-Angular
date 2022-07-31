@@ -7,11 +7,22 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+    showlogoWhite: boolean = false;
     private toggleButton: any;
     private sidebarVisible: boolean;
-    public showlogoWhite: boolean;
+
     constructor(private renderer : Renderer2, public location: Location, private element : ElementRef) {
         this.sidebarVisible = false;
+
+        this.renderer.listen('window', 'scroll', (event) => {
+            const number = window.scrollY;
+            if (number > 300 || window.pageYOffset > 300) {
+                this.showlogoWhite = true;
+            } else {
+                this.showlogoWhite = false;
+            }
+            
+        });
 
     }
 
@@ -20,15 +31,6 @@ export class NavbarComponent implements OnInit {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
         
-       this.renderer.listen('window', 'scroll', (event) => {
-            const number = window.scrollY;
-            if (number > 150 || window.pageYOffset > 150) {
-                showLogoWhite = true;
-            } else {
-                showLogoWhite = false;
-            }
-            
-        });
     }
 
     sidebarOpen() {
