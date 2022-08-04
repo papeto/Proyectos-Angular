@@ -3,7 +3,7 @@
         <div class="filter"></div>
         <div class="content-center">
             <div class="container" style="margin-top: 80%;">
-                <div class="title-brand">
+                <div class="title-brand" >
                     <!--<div class="angular-logo">
                         <img src="assets/img/Logo2.png" alt="">
                         </div>
@@ -16,39 +16,92 @@
         <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div> -->
     </div>
     <div class="main">
-        <div class="section" id="carousel">
+        <div class="section">
             <div class="container">
                 <div class="tim-title">
-                    <h3 style="font-family: 'The Amsterdam'; text-align:center; font-size: 350%;">Nuestros Procedimientos</h3>
+                    <h3 style="font-family: 'The Amsterdam'; text-align:center; font-size: 350%;">¿Que ofrecemos para ti?</h3>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 mr-auto ml-auto">
-                        <div class="card page-carousel">
-                            <ngb-carousel>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                    <div class="carousel-caption">
-                                        <p>Somewhere</p>
-                                    </div>
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                            <ngb-tab title="Biopsia de Piel">
+                                <ng-template ngbTabContent>
+                                    <p> Luego de realizar nuestra consulta y detectar sintomas sospechosos, extraemos una pequeña muestra de piel para confirmar el diagnostico. 
+                                        La muestra es enviada a un laboratorio especializado que nos podra indicar si tienes cáncer de piel, infecciones de piel o enfermedades 
+                                        de la piel, como la psoriasis.</p>
                                 </ng-template>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
-                                    <div class="carousel-caption">
-                                        <p>Somewhere else</p>
-                                    </div>
+                            </ngb-tab>
+                            <ngb-tab title="Reseccion de Quistes">
+                                <ng-template ngbTabContent>
+                                    <p>Intervenimos quirúrgica al paciente donde se retiran uno o más quistes. En muchos casos, después de su remoción, 
+                                        el quiste lo enviamos a un laboratorio para analizar su origen.</p>
                                 </ng-template>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                    <div class="carousel-caption">
-                                        <p>Here it is</p>
-                                    </div>
+                            </ngb-tab>
+                            <ngb-tab title="Aplicacion de Botox">
+                                <ng-template ngbTabContent>
+                                    <p>Al inyectar botox en la piel, éste relaja las fibras de los músculos para disminuir su contracción. 
+                                        Esto hace que la comunicación con los nervios se corte. Por este motivo se suele utilizar en cosmética 
+                                        para frenar la aparición de las arrugas.</p>
                                 </ng-template>
-                            </ngb-carousel>
-                        </div>
+                            </ngb-tab>
+                            <ngb-tab title="Aplicacion de Acido Hialuronico">
+                                <ng-template ngbTabContent>
+                                    <p>El ácido hialurónico se inyecta en la piel mediante una jeringuilla muy fina. Generalmente no se requiere 
+                                        anestesia local, aunque en ocasiones ésta se puede utilizar, dependiendo de las zonas en las que se aplica. 
+                                        La infiltración se suele efectuar sobre el surco de la arruga.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Infiltraciones de Queloides">
+                                <ng-template ngbTabContent>
+                                    <p>consiste en la inyección intralesional de un corticoide con efecto depot (generalmente Triamcinolona) 
+                                        cada 2 a 4 semanas durante varios meses, con este tratamiento se consigue detener  el crecimiento del 
+                                        queloide y mejora su aspecto.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Crioterapia">
+                                <ng-template ngbTabContent>
+                                    <p>La crioterapia es un tratamiento en el que se usa frío intenso para congelar y destruir células cancerosas 
+                                        y tejido anormal. Para esto se aplica nitrógeno líquido o gas argón. La crioterapia es un tipo de tratamiento 
+                                        local. Es decir, se usa para tratar un lugar específico del cuerpo.</p>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
                     </div>
                 </div>
             </div>
-        </div> 
+            <div class="section" id="carousel">
+                <div class="container">
+                    <div class="tim-title">
+                        <h3 style="font-family: 'The Amsterdam'; text-align:center; font-size: 350%;">Galeria de Fotos</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto">
+                            <div class="card page-carousel">
+                                <ngb-carousel>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                        <div class="carousel-caption">
+                                            <p>Somewhere</p>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                                        <div class="carousel-caption">
+                                            <p>Somewhere else</p>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                        <div class="carousel-caption">
+                                            <p>Here it is</p>
+                                        </div>
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
       <!--<app-basicelements></app-basicelements> -->
       <app-navigation></app-navigation>
       <div class="section">
