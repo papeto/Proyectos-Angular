@@ -1,4 +1,10 @@
 /*          Changes for small display      */
+@media (min-width: 300px) and (max-width: 450px){
+    .video{
+        height: 100px;
+    }
+}
+
 
 @media (max-width: 767px){
     .navbar-transparent{
@@ -355,6 +361,10 @@
             margin-bottom: 2em;
         }
     }
+
+    .video{
+        height: 200px;
+    }
 }
 @media screen and (max-width: 991px){
     .navbar-collapse {
@@ -498,6 +508,9 @@
        left: 0;
        background-color: white;
     }
+    .video{
+        height: 200px;
+    }
 }
 
 @media screen and (min-width:767px){
@@ -530,6 +543,9 @@
             }
 
         }
+    }
+    .video{
+        height: 200px;
     }
 }
 
@@ -682,11 +698,17 @@
            }
         }
     }
+    .video{
+        height: 350px;
+    }
 }
 @media screen and (max-width: 1025px){
     .input-group{
         .input-group-addon{
             padding-right: 10px;
         }
+    }
+    .video{
+        height: 300px;
     }
 }

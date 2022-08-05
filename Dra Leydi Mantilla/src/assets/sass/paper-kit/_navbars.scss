@@ -19,10 +19,12 @@
     .navbar-brand{
         font-family: 'The Amsterdam';
         margin: $navbar-margin-brand;
-        padding: -30%;
-        font-size:200%;
+        padding: 0;
+        margin: 0;
+        font-size:300%;
         color: $default-color;
         font-weight: 100;
+        font-weight: lighter;
        // text-transform: uppercase;
     }
     
@@ -119,7 +121,7 @@
        @include center-item();
     }
     &.navbar-transparent{
-        padding-top: 25px;
+        padding-top: 0px;
     }
     .logo-container{
         margin-top: 5px;

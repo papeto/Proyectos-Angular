@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         });
         this.renderer.listen('window', 'scroll', (event) => {
             const number = window.scrollY;
-            if (number > 300 || window.pageYOffset > 300) {
+            if (number > 500 || window.pageYOffset > 500) {
                 // add logic
                 navbar.classList.remove('navbar-transparent');
             } else {

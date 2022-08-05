@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
         this.renderer.listen('window', 'scroll', (event) => {
             const number = window.scrollY;
             console.log(window.pageYOffset);
-            if (number > 300 || window.pageYOffset > 300) {
+            if (number > 500 || window.pageYOffset > 500) {
                 this.showlogoWhite = true;
             } else {
                 this.showlogoWhite = false;
