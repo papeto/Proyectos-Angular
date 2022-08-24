@@ -26,12 +26,12 @@
                         <ngb-tabset [justify]="'center'">
                             <ngb-tab title="Biopsia de Piel">
                                 <ng-template ngbTabContent>
-                                    <p> Luego de realizar nuestra consulta y detectar sintomas sospechosos, extraemos una pequeña muestra de piel para confirmar el diagnostico. 
-                                        La muestra es enviada a un laboratorio especializado que nos podra indicar si tienes cáncer de piel, infecciones de piel o enfermedades 
-                                        de la piel, como la psoriasis.</p>
+                                    <p> Luego de realizar nuestra consulta y detectar sintomas sospechosos, extraemos una pequeña muestra de piel 
+                                        para confirmar el diagnostico, la muestra es enviada a un laboratorio especializado que nos podra indicar 
+                                    </p>
                                         <br>
                                         <div class="card page-carousel">
-                                            <img src="./assets/img/Biopsia-de-Piel.jpg" alt="Biopsia">
+                                            <img src="./assets/img/Biopsia.png" alt="Biopsia" style="border-radius: 20px; margin-top: 90px;">
                                         </div>
                                 </ng-template>
                             </ngb-tab>
@@ -39,34 +39,58 @@
                                 <ng-template ngbTabContent>
                                     <p>Intervenimos quirúrgica al paciente donde se retiran uno o más quistes. En muchos casos, después de su remoción, 
                                         el quiste lo enviamos a un laboratorio para analizar su origen.</p>
+                                        <br>
+                                        <div class="card page-carousel" >
+                                            <img src="./assets/img/Quistes.png" alt="Quistes" style="border-radius: 20px; margin-top: 90px">
+                                        </div>
                                 </ng-template>
                             </ngb-tab>
-                            <ngb-tab title="Aplicacion de Botox">
+                            <ngb-tab title="Botox">
                                 <ng-template ngbTabContent>
                                     <p>Al inyectar botox en la piel, éste relaja las fibras de los músculos para disminuir su contracción. 
                                         Esto hace que la comunicación con los nervios se corte. Por este motivo se suele utilizar en cosmética 
                                         para frenar la aparición de las arrugas.</p>
+                                        <br>
+                                        <div class="card page-carousel" >
+                                            <img src="./assets/img/Botox.png" alt="Botox" style="border-radius: 20px; margin-top: 90px">
+                                        </div>
                                 </ng-template>
                             </ngb-tab>
-                            <ngb-tab title="Aplicacion de Acido Hialuronico">
+                            <ngb-tab title="Acido Hialuronico">
                                 <ng-template ngbTabContent>
-                                    <p>El ácido hialurónico se inyecta en la piel mediante una jeringuilla muy fina. Generalmente no se requiere 
+                                    <p>
+                                        El ácido hialurónico se inyecta en la piel mediante una jeringuilla muy fina. Generalmente no se requiere 
                                         anestesia local, aunque en ocasiones ésta se puede utilizar, dependiendo de las zonas en las que se aplica. 
-                                        La infiltración se suele efectuar sobre el surco de la arruga.</p>
-                                </ng-template>
-                            </ngb-tab>
-                            <ngb-tab title="Infiltraciones de Queloides">
-                                <ng-template ngbTabContent>
-                                    <p>consiste en la inyección intralesional de un corticoide con efecto depot (generalmente Triamcinolona) 
-                                        cada 2 a 4 semanas durante varios meses, con este tratamiento se consigue detener  el crecimiento del 
-                                        queloide y mejora su aspecto.</p>
+                                    </p>
+                                        <br>
+                                        <div class="card page-carousel">
+                                            <img src="./assets/img/Acido_Hia.png" alt="Acido Hialuronico" style="border-radius: 20px; margin-top: 90px">
+                                        </div>
                                 </ng-template>
                             </ngb-tab>
                             <ngb-tab title="Crioterapia">
                                 <ng-template ngbTabContent>
-                                    <p>La crioterapia es un tratamiento en el que se usa frío intenso para congelar y destruir células cancerosas 
+                                    <p>
+                                        La crioterapia es un tratamiento en el que se usa frío intenso para congelar y destruir células cancerosas 
                                         y tejido anormal. Para esto se aplica nitrógeno líquido o gas argón. La crioterapia es un tipo de tratamiento 
-                                        local. Es decir, se usa para tratar un lugar específico del cuerpo.</p>
+                                        local.
+                                    </p>
+                                        <br>
+                                        <div class="card page-carousel">
+                                            <img src="./assets/img/Crioterapia.png" alt="Crioterapia" style="border-radius: 20px; margin-top: 90px">
+                                        </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Radiesse">
+                                <ng-template ngbTabContent>
+                                    <p>
+                                        LRadiesse es un relleno dérmico con el que se pueden tratar las arrugas faciales para lograr un aspecto más 
+                                        rejuvenecido en tu rostro. El tratamiento estético con Radiesse es totalmente seguro. 
+                                    </p>
+                                        <br>
+                                        <div class="card page-carousel">
+                                            <img src="./assets/img/Radiesse.png" alt="Radiesse" style="border-radius: 20px; margin-top: 90px" >
+                                        </div>
                                 </ng-template>
                             </ngb-tab>
                         </ngb-tabset>
@@ -113,265 +137,6 @@
             </div> 
       <!--<app-basicelements></app-basicelements> -->
 
-      <div class="section">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Progress Bar</h3>
-                          <br/>
-                      </div>
-                      <ngb-progressbar type="success" class="mt-0" [value]="25">25</ngb-progressbar><br>
-                      <ngb-progressbar type="info" class="mt-0" [value]="50"><span class="h6 mb-0">Copying file <b>2 of 4</b> ...</span></ngb-progressbar><br>
-                      <ngb-progressbar type="warning" class="mt-0" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar><br>
-                      <ngb-progressbar type="danger" class="mt-0" [value]="100" [striped]="true">Completed!</ngb-progressbar>
-
-                  </div>
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Pagination</h3>
-                          <br/>
-                      </div>
-                      <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
-                      <br/>
-                      <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
-                  </div>
-              </div>
-              <br/>
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Labels</h3>
-                      </div>
-                      <span class="label label-default">Default</span>
-                      <span class="label label-primary">Primary</span>
-                      <span class="label label-info">Info</span>
-                      <span class="label label-success">Success</span>
-                      <span class="label label-warning">Warning</span>
-                      <span class="label label-danger">Danger</span>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="section section-notifications" id="notifications">
-          <div class="container">
-              <div class="tim-title">
-                  <h3>Notification</h3>
-              </div>
-          </div>
-          <app-notification></app-notification>
-      </div>
-      <app-typography></app-typography>
-      <div class="section javascript-components">
-          <div class="container">
-              <div class="tim-title">
-                  <h2>Angular Native Components</h2>
-              </div>
-              <div class="row" id="modals">
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Modal</h3>
-                      </div>
-                      <app-modal-component></app-modal-component>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Popovers</h3>
-                      </div>
-
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="right"
-                          ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on right">
-                          on right
-                      </button>
-
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="top"
-                          ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on top">
-                          on top
-                      </button>
-
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="left"
-                          ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on left">
-                          on left
-                      </button>
-
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="bottom"
-                          ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on bottom">
-                          on bottom
-                      </button>
-
-                  </div>
-                  <br/>
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Datepicker</h3>
-                      </div>
-                      <div class="row">
-                          <div class='col-sm-6'>
-                              <form class="form-inline">
-                                  <div class="form-group">
-                                      <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
-                                          <input class="form-control" placeholder="yyyy-mm-dd"
-                                               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
-                                          <div class="input-group-append">
-                                              <span class="glyphicon glyphicon-calendar input-group-text">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="tim-title">
-                          <h3>Tooltips</h3>
-                      </div>
-
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="right" ngbTooltip="Tooltip on right">
-                         on right
-                     </button>
-                     <button type="button" class="btn btn-outline-danger btn-round" placement="left" ngbTooltip="Tooltip on left">
-                        on left
-                     </button>
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="top" ngbTooltip="Tooltip on top">
-                         on top
-                      </button>
-                      <button type="button" class="btn btn-outline-danger btn-round" placement="bottom" ngbTooltip="Tooltip on bottom">
-                         on bottom
-                      </button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="section" id="carousel">
-          <div class="container">
-              <div class="tim-title">
-                  <h3>Carousel</h3>
-              </div>
-              <div class="row">
-                  <div class="col-md-8 mr-auto ml-auto">
-                      <div class="card page-carousel">
-                          <ngb-carousel>
-                              <ng-template ngbSlide>
-                                  <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                  <div class="carousel-caption">
-                                      <p>Somewhere</p>
-                                  </div>
-                              </ng-template>
-                              <ng-template ngbSlide>
-                                  <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
-                                  <div class="carousel-caption">
-                                      <p>Somewhere else</p>
-                                  </div>
-                              </ng-template>
-                              <ng-template ngbSlide>
-                                  <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                  <div class="carousel-caption">
-                                      <p>Here it is</p>
-                                  </div>
-                              </ng-template>
-                          </ngb-carousel>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-        <div class="section section-dark section-nucleo-icons">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <h2 class="title">Nucleo Icons</h2><br/>
-                        <p class="description">
-                            Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The official package contains over 2.100 thin icons which are looking great in combination with Now UI Kit Make sure you check all of them and use those that you like the most.
-                        </p><br/>
-                        <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
-                        <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <div class="icons-container">
-                            <i class="nc-icon nc-time-alarm"></i>
-                            <i class="nc-icon nc-atom"></i>
-                            <i class="nc-icon nc-camera-compact"></i>
-                            <i class="nc-icon nc-watch-time"></i>
-                            <i class="nc-icon nc-key-25"></i>
-                            <i class="nc-icon nc-diamond"></i>
-                            <i class="nc-icon nc-user-run"></i>
-                            <i class="nc-icon nc-layout-11"></i>
-                            <i class="nc-icon nc-badge"></i>
-                            <i class="nc-icon nc-bulb-63"></i>
-                            <i class="nc-icon nc-favourite-28"></i>
-                            <i class="nc-icon nc-planet"></i>
-                            <i class="nc-icon nc-tie-bow"></i>
-                            <i class="nc-icon nc-zoom-split"></i>
-                            <i class="nc-icon nc-cloud-download-93"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Completed with examples</h2>
-                        <p class="description">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
-                        <div class="card card-register">
-                            <h3 class="title">Welcome</h3>
-                            <div class="social-line text-center">
-                                <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                            <form class="register-form">
-                                <label>Email</label>
-                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="nc-icon nc-email-85"></i>
-                                    </span>
-                                  </div>
-
-                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
-                                </div>
-
-                                <label>Password</label>
-                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="nc-icon nc-key-25"></i>
-                                    </span>
-                                  </div>
-                                    <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
-                                </div>
-                                <button class="btn btn-danger btn-block btn-round">Register</button>
-                            </form>
-                            <div class="forgot">
-                                <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
-                            </div>
-                        </div>
-                        <div class="col text-center" routerLinkActive="active">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">View Register Page</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="section section-dark">
             <div class="container">
                 <div class="row example-page">
@@ -393,18 +158,6 @@
         </div>
         <div class="section">
             <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Do you like what you see?</h2>
-                        <p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 download-area ml-auto mr-auto">
-                        <a href="https://www.creative-tim.com/product/paper-kit-2" class="btn btn-warning btn-round">Download free HTML</a>
-                        <a href="https://www.creative-tim.com/product/paper-kit-2-angular" class="btn btn-danger btn-round">Download free Angular</a>
-                    </div>
-                </div>
                 <div class="row justify-content-md-center sharing-area text-center">
                     <div class="text-center col-md-12 col-lg-8">
                         <h3>Thank you for supporting us!</h3>
