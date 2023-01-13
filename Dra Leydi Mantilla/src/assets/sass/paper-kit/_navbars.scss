@@ -17,14 +17,12 @@
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
     .navbar-brand{
-        font-family: 'The Amsterdam';
+        text-align: center;
         margin: $navbar-margin-brand;
         padding: 0;
-        margin: 0;
-        font-size:300%;
+        margin: 30px;
         color: $default-color;
-        font-weight: 100;
-        font-weight: lighter;
+
        // text-transform: uppercase;
     }
     

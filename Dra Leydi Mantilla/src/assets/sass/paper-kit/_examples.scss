@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Amsterdam";
+    src: local("Amsterdam"), url(/src/assets/fonts/amsterdam-three-slant.ttf) format("truetype");
+
+}
+
 .landing-alert{
     margin-bottom: 0;
 }
@@ -191,7 +197,7 @@
     background: -ms-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
     background: -o-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
     background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    font-family: 'The Amsterdam';
+    font-family: "Amsterdam";
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

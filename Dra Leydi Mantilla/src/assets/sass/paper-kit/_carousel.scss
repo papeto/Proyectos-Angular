@@ -98,7 +98,7 @@
     .carousel-control-prev,
     .carousel-control-next{
         opacity: 1;
-        @include transition(300ms, linear);
+        @include transition(500ms, linear);
 
     }
 }
