@@ -50,3 +50,11 @@ ngb-carousel {
  .carousel-control-next-icon{
    background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
  }
+
+ .carousel-caption{
+    position: relative;
+    padding-top: 15px;
+    .p{
+        font-size: 12px;
+    }
+ }

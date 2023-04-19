@@ -12,6 +12,7 @@ import { BookingComponent } from './booking/booking.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutComponent,
     BookingComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
