@@ -1,0 +1,9 @@
+.grow-on-hover {
+    transition: transform 0.2s ease-out; /* Añade una transición suave para el cambio */
+  }
+  
+  .grow-on-hover:hover {
+    transform: scale(1.1); /* Hace que el elemento crezca un 10% */
+  }
+
+  

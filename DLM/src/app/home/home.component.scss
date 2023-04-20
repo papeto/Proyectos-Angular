@@ -1,5 +1,13 @@
+.grow-on-hover {
+  transition: transform 0.2s ease-out; /* Añade una transición suave para el cambio */
+}
+
+.grow-on-hover:hover {
+  transform: scale(1.1); /* Hace que el elemento crezca un 10% */
+}
+
 .portada {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.30)),url(/assets/images/gallery/Home5.jpeg); /* Ruta de la imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.30)),url(/assets/images/gallery/Home5.webp); /* Ruta de la imagen de fondo */
     background-size:cover;
     background-position: center;
     justify-content:center;

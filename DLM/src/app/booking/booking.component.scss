@@ -1,4 +1,29 @@
+.palpitando:hover{
+    animation: beat 2s infinite; /* Añade una animación llamada "beat" que se repetirá infinitamente */
+    transform-origin: center; /* Establece el origen de la transformación en el centro del icono */
+  }
 
+  @keyframes beat {
+    0% {
+      transform: scale(0.9); /* Define la escala normal del icono */
+    }
+    50% {
+      transform: scale(0.91); /* Define la escala máxima del icono */
+    }
+    100% {
+      transform: scale(0.9); /* Vuelve a la escala normal del icono */
+    }
+  }
+
+
+
+.grow-on-hover {
+	transition: transform 0.2s ease-out; /* Añade una transición suave para el cambio */
+  }
+  
+  .grow-on-hover:hover {
+	transform: scale(1.8); /* Hace que el elemento crezca un 10% */
+  }
 
 .ftco-section{
 	padding: 4em 0;
