@@ -1,9 +1,26 @@
-<nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg" style="background-image: url(/assets/images/gallery/Navbar.webp);    background-size:cover;
-background-position: center;">
-    <div class="container" >
+<nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg" style="background-image: url(/assets/images/gallery/Navbar.webp); background-size:cover;background-position: center;">
+    <div class="container">
         <a class="navbar-brand mx-auto d-lg-none" href="index.html">
           <img style="width: 100px ;" src="/assets/images/gallery/Dra_Leydi_Mantilla.png" alt="Dra Leydi Mantilla">
         </a>
+
+        <li ngbDropdown class="nav-item DropDownMenu" role="presentation">
+            <i class="bi bi-list nav-link"  ngbDropdownToggle></i> 
+            <div ngbDropdownMenu class="nav-item" >
+                <a class="nav-link grow-on-hover" href="#hero"> Inicio</a>
+                <a class="nav-link grow-on-hover" href="#about"> Nosotros</a>
+                <a class="nav-link grow-on-hover" href="#timeline"> Procedimientos</a>
+                <a class="nav-link grow-on-hover" href="#Perfil"> Perfil</a>
+                <a class="nav-link grow-on-hover" href="#booking"> Agenda</a>
+                <a class="nav-link grow-on-hover" href="#Galeria"> Galeria</a>
+                <a class="nav-link grow-on-hover" href="#contact"> Contactanos</a>
+                <div class="dropdown-divider"></div>
+                <a href="https://wa.me/573178148094?text=Hola!%20Me%20gustaría%20realizar%20una%20consulta,%20que%20fechas%20tienen%20disponibilidad?" class="social-icon-link bi-whatsapp grow-on-hover" style="margin-left: 10px;" target="_blank"> Whatsapp</a>
+                <a href="tel:317-814-8094" class="social-icon-link bi-telephone grow-on-hover" style="margin-left: 10px;"> Telefono</a>
+                <a href="https://www.instagram.com/dramantilladerma/" class="social-icon-link bi-instagram grow-on-hover" target="_blank" style="margin-left: 10px;"> Instagram</a>
+                <a href="https://www.linkedin.com/in/leydi-mantilla-villabona-09a539137/" class="social-icon-link bi-linkedin grow-on-hover" target="_blank" style="margin-left: 10px;"> Linkedin</a>
+            </div>
+        </li>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto" style="font-family: 'OpenSans';">

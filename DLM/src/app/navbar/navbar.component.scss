@@ -5,5 +5,7 @@
   .grow-on-hover:hover {
     transform: scale(1.1); /* Hace que el elemento crezca un 10% */
   }
-
   
+  .dropdown-toggle::after {
+    display:none;
+  }

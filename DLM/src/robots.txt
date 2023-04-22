@@ -1,2 +1,7 @@
-User-agent: *
-Disallow:
+# start of file
+user-agent: *
+disallow: /
+
+user-agent: magicsearchbot
+disallow: /
+sitemap: https://draleydimantilla.com/sitemap-file.xml

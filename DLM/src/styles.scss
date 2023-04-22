@@ -431,6 +431,12 @@ https://templatemo.com/tm-566-medic-care
     height: 2px;
     position: relative;
   }
+
+  .DropDownMenu{
+    display: none;
+    position: fixed;
+
+  }
   
 
   /*---------------------------------------
@@ -665,9 +671,15 @@ https://templatemo.com/tm-566-medic-care
       width: 320px;
       height: 320px;
     }
+
     .bookingMap{
       height: 422px;
     }
+
+    .DropDownMenu{
+      display:inherit;
+    }
+
   }
   
   @media screen and (max-width: 767px) {
